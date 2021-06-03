@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MensajesActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:background="@color/colorPrimary"
+            android:theme="@style/MenuStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+               xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_usuarios"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FFFFFF"
+                />
+
+            <TextView
+                android:shadowColor="#000000"
+                android:shadowRadius="2"
+                android:shadowDx="1"
+                android:shadowDy="2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_usuarios"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:text="nombre usuario"
+                android:textColor="#ffffff"/>
+            <ImageView
+                android:visibility="gone"
+                android:src="@drawable/ic_conectado"
+                android:id="@+id/icon_conectado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:src="@drawable/ic_desconectado"
+                android:id="@+id/icon_desconectado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMensaje"
+        android:layout_below="@+id/appbar"
+        android:layout_above="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/et_txt_mensaje"
+            android:layout_toLeftOf="@+id/btn_enviar_msj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Escribe un mensaje...">
+
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/btn_enviar_msj"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+
+            android:background="@drawable/ic_boton_enviar">
+
+        </ImageButton>
+    </RelativeLayout>
+    
+</RelativeLayout>

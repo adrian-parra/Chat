@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragments.UsuariosFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/CardviewUsuarios"
+    android:elevation="10dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginBottom="1dp"
+    android:layout_marginTop="1dp"
+    android:backgroundTint="#0033FF"
+
+    >
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_usuarios"
+            android:layout_margin="5dp"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FFFFFF"
+           />
+
+        <TextView
+            android:shadowColor="#000000"
+            android:shadowRadius="2"
+            android:shadowDx="1"
+            android:shadowDy="2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_usuarios"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:text="nombre usuario"
+            android:textColor="#ffffff"
+
+            />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progresbar"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+
+    </ProgressBar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/rv"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

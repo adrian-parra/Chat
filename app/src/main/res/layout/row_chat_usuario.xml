@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_chat_usuario"
+        android:visibility="gone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:layout_margin="3dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="#000000"
+        >
+
+        <LinearLayout
+            android:padding="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:shadowColor="#ffffff"
+                    android:shadowRadius="2"
+                    android:shadowDx="1"
+                    android:shadowDy="2"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_msj"
+                    android:textSize="14dp"
+
+                    android:text="nombre"
+                    android:textColor="#000000"
+
+                    />
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_chat_usuario_right"
+        android:visibility="gone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:layout_gravity="right"
+        android:layout_margin="3dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="#000000"
+        >
+
+        <LinearLayout
+            android:padding="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+<!--
+                <TextView
+                    android:id="@+id/tv_usuario_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="#000000"
+                    android:textAlignment="center"
+                    android:shadowDx="1"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:text="nombre usuario"
+                    android:textColor="#3366CC"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+
+                    />
+-->
+
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:shadowColor="#000000"
+                    android:shadowRadius="2"
+                    android:shadowDx="1"
+                    android:shadowDy="2"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_msj_right"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+
+                    android:text="nombre "
+                    android:textColor="#ffffff"
+
+                    />
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

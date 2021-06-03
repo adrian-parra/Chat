@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "999907991068",
+    "firebase_url": "https://chatreal-bf9dc.firebaseio.com",
+    "project_id": "chatreal-bf9dc",
+    "storage_bucket": "chatreal-bf9dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999907991068:android:3c4e0062665736d2adc9d9",
+        "android_client_info": {
+          "package_name": "com.example.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "999907991068-bcsnrd3iudtfshq8u7tbpbfqurndelp9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chat",
+            "certificate_hash": "35dc7f7713f9939f653788c18d0bbf5490122428"
+          }
+        },
+        {
+          "client_id": "999907991068-rkgmutmvp08utkvm91m1ong1jc82i6n8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZRwIwxLjgVzFbKpa7Lo43sARm8NoyOI0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "999907991068-rkgmutmvp08utkvm91m1ong1jc82i6n8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

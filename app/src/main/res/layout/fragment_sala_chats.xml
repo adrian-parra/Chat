@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SalaChatsFragment"
+    android:orientation="vertical"
+    android:padding="5dp"
+
+    >
+<!-- PARTE DEL NOMBRE CON IMAGEN DE PERFIL
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       android:background="#000000"
+
+        android:layout_gravity="center">
+
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_usuario"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="#00CCFF"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Adrian"
+            android:textAlignment="center"
+            android:textColor="#00CCFF"
+            android:textSize="25dp"
+
+
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMensajes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="5dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/btnEnviarFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00ccff"
+            android:background="@android:drawable/ic_menu_gallery"
+            android:layout_gravity="center"
+            />
+        <EditText
+            android:id="@+id/etMensaje"
+            android:background="@drawable/bordes_editext"
+            android:layout_width="match_parent"
+            android:backgroundTint="#00ccff"
+            android:layout_height="wrap_content"
+            android:hint="Escribe un mensaje"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:textColorHint="#ffffff"
+
+            >
+
+        </EditText>
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00ccff"
+            android:drawableRight="@drawable/fui_ic_anonymous_white_24dp"
+            android:hint="Audio"
+            android:textColorHint="#ffffff">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnGrabarAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00ccff"
+            android:drawableRight="@drawable/fui_ic_anonymous_white_24dp"
+            android:hint="Audio"
+            android:visibility="gone"
+            android:textColorHint="#ffffff">
+
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>
